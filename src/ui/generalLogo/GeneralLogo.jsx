@@ -3,9 +3,7 @@ import React from 'react'
 
 const GeneralLogo = () => {
   return (
-    <Box>
-      
-    </Box>
+    <div></div>
   )
 }
 

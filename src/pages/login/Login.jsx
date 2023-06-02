@@ -1,11 +1,16 @@
+import { Container } from '@mui/material'
 import React from 'react'
+import HorizontalLinearStepper from '../../ui/stepper/Stepper'
+import './login.css';
 
-const login = () => {
+const Login = () => {
   return (
-    <div>
-      
-    </div>
+    <>
+      <Container maxWidth='lg' sx={{background: 'red'}}>
+        <HorizontalLinearStepper  />
+      </Container>
+    </>
   )
 }
 
-export default login
+export default Login
