@@ -4,7 +4,7 @@ import { FormControl, InputLabel, OutlinedInput, InputAdornment, IconButton, Box
 import { VisibilityOff, Visibility  } from '@mui/icons-material';
 import { Link } from 'react-router-dom';
 
-const Input = () => {
+const Input = ({display, displayForgot}) => {
   const [showPassword, setShowPassword] = useState(false);
 
   const handleClickShowPassword = () => setShowPassword((show) => !show);
@@ -24,8 +24,9 @@ const Input = () => {
         mt: '20px',
       }}>
       <FormControl sx={{ m: 1, width: '25ch' }} variant="outlined">
-          <InputLabel htmlFor="outlined-adornment-password" size='small'>Email</InputLabel>
+          <InputLabel htmlFor="outlined-adornment-password" size='small' sx={{display: displayForgot}}>Email</InputLabel>
           <OutlinedInput
+          sx={{display: displayForgot}}
             id="outlined-adornment-password"
             type={'email'}
             size="small"
@@ -36,6 +37,7 @@ const Input = () => {
                   onClick={handleClickShowPassword}
                   onMouseDown={handleMouseDownPassword}
                   edge="end"
+                
                 >
                   {/* {showPassword ? <VisibilityOff /> : <Visibility />} */}
                 </IconButton>
@@ -45,8 +47,9 @@ const Input = () => {
           />
         </FormControl>
       <FormControl sx={{ m: 1, width: '25ch' }} variant="outlined">
-          <InputLabel htmlFor="outlined-adornment-password" size='small'>Password</InputLabel>
+          <InputLabel htmlFor="outlined-adornment-password" size='small' sx={{display: {display}}}>Password</InputLabel>
           <OutlinedInput
+          sx={{display: {display}}}
             id="outlined-adornment-password"
             type={showPassword ? 'text' : 'password'}
             size="small"
@@ -64,7 +67,7 @@ const Input = () => {
             }
             label="Password"
           />
-          <Link to={'#'} style={{ textDecoration: 'none', color: '#47B2FF', textAlign: 'left' }}>
+          <Link to={'/forgetPassword'} style={{ textDecoration: 'none', color: '#47B2FF', textAlign: 'left', display: display,}}>
             Forgot Password?
           </Link>
         </FormControl>

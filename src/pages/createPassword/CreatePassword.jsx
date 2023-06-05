@@ -1,18 +1,17 @@
 import { Box, Container, Typography } from '@mui/material'
 import React from 'react'
-import GeneralLogo from '../../ui/generalLogo/GeneralLogo';
-import Input from '../../ui/input/Input';
+import GeneralLogo from '../../ui/generalLogo/GeneralLogo'
+import Input from '../../ui/input/Input'
 import HorizontalLinearStepper from '../../ui/stepper/Stepper'
-import './login.css';
 import bntIcon from '../../Assent/btn-icon.png';
-import GeneralButton from '../../ui/generalButton/GeneralButton';
-import GeneralProgress from '../../ui/generalPrograss/GeneralProgress';
+import GeneralButton from '../../ui/generalButton/GeneralButton'
+import GeneralProgress from '../../ui/generalPrograss/GeneralProgress'
 
-const Login = () => {
+const CreatePassword = () => {
   return (
     <Box>
-      <Container maxWidth='lg' >
-        <HorizontalLinearStepper  />
+      <Container>
+        <HorizontalLinearStepper />
         <Box maxWidth={'100%'} height={530} sx={{
           background: '#fff',
           borderRadius: '34px',
@@ -25,19 +24,20 @@ const Login = () => {
           <Typography variant='h3' sx={{
             mt: '60px'
           }}>
-            Welcome Back!
+            Create New <span style={{color: '#47B2FF', fontWeight: 'bold'}}>Password!</span>
           </Typography>
           <Typography variant='p' sx={{
             fontSize: '20px'
           }}>
-            Sign in To Get Started
+            Update Your Credentials Now!
           </Typography>
-          <Input />
+          <Input display='none' />
+          <Input displayForgot='none' display='none'  />
           <Typography variant='h4' sx={{fontWeight: 'bold', mt: '20px'}}>
-            Start Your <span style={{color: '#47B2FF', fontWeight: 'bold'}}>Work!</span>
+            Update Your <span style={{color: '#47B2FF', fontWeight: 'bold'}}>Password!</span>
           </Typography>
           <img src={bntIcon} alt="tvar" className='imgBtnIcon' />
-          <GeneralButton login='login' display='none' />
+          <GeneralButton login='Update Password!' display='none' link='/recoveryLink' />
           <GeneralProgress display='none' />
         </Box>
       </Container>
@@ -45,4 +45,4 @@ const Login = () => {
   )
 }
 
-export default Login
+export default CreatePassword

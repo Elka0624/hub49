@@ -1,18 +1,17 @@
 import { Box, Container, Typography } from '@mui/material'
 import React from 'react'
-import GeneralLogo from '../../ui/generalLogo/GeneralLogo';
-import Input from '../../ui/input/Input';
+import GeneralButton from '../../ui/generalButton/GeneralButton'
+import GeneralLogo from '../../ui/generalLogo/GeneralLogo'
+import GeneralProgress from '../../ui/generalPrograss/GeneralProgress'
+import Input from '../../ui/input/Input'
 import HorizontalLinearStepper from '../../ui/stepper/Stepper'
-import './login.css';
+import './ForgetPassword.css'
 import bntIcon from '../../Assent/btn-icon.png';
-import GeneralButton from '../../ui/generalButton/GeneralButton';
-import GeneralProgress from '../../ui/generalPrograss/GeneralProgress';
-
-const Login = () => {
+const ForgetPassword = () => {
   return (
     <Box>
-      <Container maxWidth='lg' >
-        <HorizontalLinearStepper  />
+      <Container maxWidth='lg'>
+        <HorizontalLinearStepper />
         <Box maxWidth={'100%'} height={530} sx={{
           background: '#fff',
           borderRadius: '34px',
@@ -25,19 +24,19 @@ const Login = () => {
           <Typography variant='h3' sx={{
             mt: '60px'
           }}>
-            Welcome Back!
+            Forgot Password ?
           </Typography>
           <Typography variant='p' sx={{
             fontSize: '20px'
           }}>
-            Sign in To Get Started
+            Enter Your Email
           </Typography>
-          <Input />
+          <Input display='none' mt='50px' />
           <Typography variant='h4' sx={{fontWeight: 'bold', mt: '20px'}}>
-            Start Your <span style={{color: '#47B2FF', fontWeight: 'bold'}}>Work!</span>
+          We Will Email You A <br /> <span style={{color: '#47B2FF', fontWeight: 'bold'}}>Reset Password Link</span>
           </Typography>
           <img src={bntIcon} alt="tvar" className='imgBtnIcon' />
-          <GeneralButton login='login' display='none' />
+          <GeneralButton login='Reset' display='none' link='/createPassword' />
           <GeneralProgress display='none' />
         </Box>
       </Container>
@@ -45,4 +44,4 @@ const Login = () => {
   )
 }
 
-export default Login
+export default ForgetPassword

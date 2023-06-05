@@ -6,7 +6,7 @@ import './stepper.css';
 const steps = ['', '', '', '', '', '', '', '', '', '', '', ''];
 
 export default function HorizontalLinearStepper() {
-  const [activeStep, setActiveStep] = React.useState(0);
+  const [activeStep, setActiveStep] = React.useState(null);
   const [skipped, setSkipped] = React.useState(new Set());
 
   const isStepOptional = (step) => {
