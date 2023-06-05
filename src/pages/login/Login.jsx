@@ -30,6 +30,9 @@ const Login = () => {
             Sign in To Get Started
           </Typography>
           <Input />
+          <Typography variant='h4' sx={{fontWeight: 'bold', mt: '20px'}}>
+            Start Your <span style={{color: '#47B2FF', fontWeight: 'bold'}}>Work!</span>
+          </Typography>
         </Box>
       </Container>
     </Box>
