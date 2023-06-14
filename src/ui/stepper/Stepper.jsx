@@ -5,28 +5,8 @@ import './stepper.css';
 
 const steps = ['', '', '', '', '', '', '', '', '', '', '', ''];
 
-export default function HorizontalLinearStepper() {
-  const [activeStep, setActiveStep] = React.useState(null);
-  const [skipped, setSkipped] = React.useState(new Set());
+export default function HorizontalLinearStepper(props) {
 
-  const isStepOptional = (step) => {
-    return step === 1;
-  };
-
-  const isStepSkipped = (step) => {
-    return skipped.has(step);
-  };
-
-  const handleNext = () => {
-    let newSkipped = skipped;
-    if (isStepSkipped(activeStep)) {
-      newSkipped = new Set(newSkipped.values());
-      newSkipped.delete(activeStep);
-    }
-
-    setActiveStep((prevActiveStep) => prevActiveStep + 1);
-    setSkipped(newSkipped);
-  };
 
   const handleBack = () => {
     setActiveStep((prevActiveStep) => prevActiveStep - 1);

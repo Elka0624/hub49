@@ -16,7 +16,7 @@ const BorderLinearProgress = styled(LinearProgress)(({ theme }) => ({
   },
 }));
 
-const GeneralProgress = ({display}) => {
+const GeneralProgress = ({display, item}) => {
 
   return (
     <div>

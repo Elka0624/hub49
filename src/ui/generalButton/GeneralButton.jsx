@@ -4,10 +4,10 @@ import DirectionsCarIcon from '@mui/icons-material/DirectionsCar';
 import './generalButton.css'
 import { Link } from 'react-router-dom';
 
-const GeneralButton = ({login, display, link}) => {
+const GeneralButton = ({login, display, link, handleNext}) => {
   return (
     <Link to={link}>
-      <button className='buttonDiv flex'>
+      <button className='buttonDiv flex' onClick={() => handleNext()}>
         <DirectionsCarIcon sx={{mb: '10px', fontSize: '30px', color: 'white', display: {display}}}/>
         <h2 className='ButtonDivH2'>{login}</h2>
       </button>
