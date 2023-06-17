@@ -4,6 +4,7 @@ import './App.css';
 import CreatePassword from './pages/createPassword/CreatePassword';
 import ForgetPassword from './pages/forgetPassword/ForgetPassword';
 import Login from './pages/login/Login';
+import ProfileDetails from './pages/ProfileDetails/ProfileDetails';
 import RecoveryLink from './pages/RecoveryLink/RecoveryLink';
 import StartYour from './pages/startYour/StartYour';
 // import { useState } from 'react'
@@ -43,6 +44,7 @@ function App() {
         <Route path='/recoveryLink' element={<RecoveryLink />} />
         <Route path='/createPassword' element={<CreatePassword />} />
         <Route path='/startYour'  element={<StartYour  />} />
+        <Route path='/profileDetils' element={<ProfileDetails />} />
       </Routes>
     </div>
   );

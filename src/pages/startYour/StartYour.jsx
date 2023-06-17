@@ -7,7 +7,7 @@ import bntIcon from '../../Assent/btn-icon.png';
 import GeneralButton from '../../ui/generalButton/GeneralButton'
 import GeneralProgress from '../../ui/generalPrograss/GeneralProgress'
 
-const StartYour = ({handleNext}) => {
+const StartYour = (props) => {
   return (
     <Box>
       <Container maxWidth='lg'>
@@ -35,8 +35,8 @@ const StartYour = ({handleNext}) => {
           Let’s <span style={{color: '#47B2FF', fontWeight: 'bold'}}>Start</span> Your <br /> <span style={{color: '#47B2FF', fontWeight: 'bold'}}>Full-Year Journey!</span>
           </Typography>
           <img src={bntIcon} alt="tvar" className='imgBtnIcon' />
-          <GeneralButton login='Start Your Journey' display='none' handleNext={handleNext} />
-          <GeneralProgress />
+          <GeneralButton login='Start Your Journey' display='none' link='/profileDetils' />
+          <GeneralProgress item='0' step='0' text='All Rights Reserved'/>
         </Box>
       </Container>
     </Box>

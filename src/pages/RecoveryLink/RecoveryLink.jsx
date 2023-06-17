@@ -11,7 +11,7 @@ import GeneralProgress from '../../ui/generalPrograss/GeneralProgress';
 const RecoveryLink = () => {
   return (
     <Box>
-      <Container>
+      <Container  maxWidth='lg'>
         <HorizontalLinearStepper />
         <Box maxWidth={'100%'} height={530} sx={{
           background: '#fff',
@@ -31,8 +31,8 @@ const RecoveryLink = () => {
           }}>
             Check Your Email & Proceed From The Link We Sent
           </Typography>
-          <GeneralButton login='Start' display='none'/>
-          <GeneralProgress display='none' />
+          <GeneralButton login='Start' display='none' link={'/startYour'}/>
+          <GeneralProgress display='none' item='0' step='0' text='' />
         </Box>
       </Container>
     </Box>

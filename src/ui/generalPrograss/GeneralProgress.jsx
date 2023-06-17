@@ -1,4 +1,4 @@
-import { Box, FacebookCircularProgress, linearProgressClasses, LinearProgress  } from '@mui/material'
+import { Box, linearProgressClasses, LinearProgress  } from '@mui/material'
 import React from 'react'
 import { styled } from '@mui/material/styles';
 import './GeneralProgress.css';
@@ -16,19 +16,19 @@ const BorderLinearProgress = styled(LinearProgress)(({ theme }) => ({
   },
 }));
 
-const GeneralProgress = ({display, item}) => {
+const GeneralProgress = ({display, item, step, text}) => {
 
   return (
     <div>
       <div className="prograss flex">
         <div className="prograssDiv flex">
-          <div className="percentage" style={{display: display}}>0%</div>
-          <div className="progressTitle">All Rights Reserved</div>
-          <div className="progressStep" style={{display: display}}>0 step</div>
+          <div className="percentage" style={{display: display}}>{item}%</div>
+          <div className="progressTitle">{text}</div>
+          <div className="progressStep" style={{display: display}}>{step} step</div>
         </div>
         <div className='progressBar'>
         <Box sx={{ flexGrow: 1 }}>
-          <BorderLinearProgress variant="determinate" value={0} sx={{
+          <BorderLinearProgress variant="determinate" value={item} sx={{
             width: '334px',
             height: '5px',
             position: 'absolute',

@@ -1,0 +1,32 @@
+.img {
+  width: 180px;
+  border: 2px solid #EFF0F7;
+  box-Shadow: '0px 5px 16px rgba(8, 15, 52, 0.06)';
+  border-radius: 50%;
+}
+
+.img2 {
+  width: 180px;
+  height: 180px;
+  border: 2px solid #EFF0F7;
+  box-Shadow: '0px 5px 16px rgba(8, 15, 52, 0.06)';
+  border-radius: 50%;
+}
+.btnCamera {
+  border: none;
+  background: transparent;
+  outline: none;
+  position: absolute;
+  top: 290px;
+  right: 49%;
+  cursor: pointer;
+}
+.btnCamera2 {
+  border: none;
+  background: transparent;
+  outline: none;
+  position: absolute;
+  bottom: 160px;
+  right: 49%;
+  cursor: pointer;
+}
