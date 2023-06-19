@@ -1,6 +1,7 @@
 import React from 'react'
 import { Routes, Route } from 'react-router-dom';
 import './App.css';
+import Congrats from './pages/congrats/Congrats';
 import CreatePassword from './pages/createPassword/CreatePassword';
 import ForgetPassword from './pages/forgetPassword/ForgetPassword';
 import Login from './pages/login/Login';
@@ -45,6 +46,7 @@ function App() {
         <Route path='/createPassword' element={<CreatePassword />} />
         <Route path='/startYour'  element={<StartYour  />} />
         <Route path='/profileDetils' element={<ProfileDetails />} />
+        <Route path='/congrats' element={<Congrats /> } /> 
       </Routes>
     </div>
   );

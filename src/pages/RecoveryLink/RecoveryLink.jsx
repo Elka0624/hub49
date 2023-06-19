@@ -12,7 +12,7 @@ const RecoveryLink = () => {
   return (
     <Box>
       <Container  maxWidth='lg'>
-        <HorizontalLinearStepper />
+        <HorizontalLinearStepper item={'0'} />
         <Box maxWidth={'100%'} height={530} sx={{
           background: '#fff',
           borderRadius: '34px',
@@ -32,7 +32,10 @@ const RecoveryLink = () => {
             Check Your Email & Proceed From The Link We Sent
           </Typography>
           <GeneralButton login='Start' display='none' link={'/startYour'}/>
-          <GeneralProgress display='none' item='0' step='0' text='' />
+          <GeneralProgress 
+            display='none' 
+            item='0' 
+            text='All Rights Reserved ' />
         </Box>
       </Container>
     </Box>

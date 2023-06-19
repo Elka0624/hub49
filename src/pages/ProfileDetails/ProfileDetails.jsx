@@ -31,8 +31,11 @@ const ProfileDetails = () => {
               <ImageUi />
               <AutoDetailsUi />
             </Box>  
-          <GeneralButton login='Next step' display='none' link='/profileDetils' />
-          <GeneralProgress item='8' step='2nd' text='Fill Your Details!'/>
+          <GeneralButton login='Next step' display='none' link='/congrats' />
+          <GeneralProgress 
+            item='8' 
+            step='2nd' 
+            text='Fill Your Details!'/>
         </Box>
         </Container>
       </Box>

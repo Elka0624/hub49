@@ -7,11 +7,11 @@ import bntIcon from '../../Assent/btn-icon.png';
 import GeneralButton from '../../ui/generalButton/GeneralButton'
 import GeneralProgress from '../../ui/generalPrograss/GeneralProgress'
 
-const StartYour = (props) => {
+const Congrats = (props) => {
   return (
     <Box>
       <Container maxWidth='lg'>
-        <HorizontalLinearStepper item='0' />
+        <HorizontalLinearStepper item='2' />
       <Box maxWidth={'100%'} height={530} sx={{
           background: '#fff',
           borderRadius: '34px',
@@ -25,22 +25,24 @@ const StartYour = (props) => {
           <Typography variant='h3' sx={{
             mt: '60px'
           }}>
-            Heyy! Welcome to <span style={{color: '#47B2FF', fontWeight: 'bold'}}>Jizzax 712</span>
+            Congrats
           </Typography>
           <Typography variant='p' sx={{
             fontSize: '20px'}}>
-            We Are Glad to Have You Onboard!
+            You have Submitted All Your Profile Details & All Needed Information
           </Typography>
           <Typography variant='h4' sx={{fontWeight: 'bold', mt: '20px'}}>
-          Let’s <span style={{color: '#47B2FF', fontWeight: 'bold'}}>Start</span> Your <br /> <span style={{color: '#47B2FF', fontWeight: 'bold'}}>Full-Year Journey!</span>
+          Let Us Work on <span style={{color: '#47B2FF', fontWeight: 'bold'}}>Your Plan</span> Now !
           </Typography>
           <img src={bntIcon} alt="tvar" className='imgBtnIcon' />
-          <GeneralButton login='Start Your Journey' display='none' link='/profileDetils' />
-          <GeneralProgress item='0' step='1' text='Start Your Journey'/>
+          <GeneralButton login='Order Your Plan Now !' display='none' link='/congrats' />
+          <GeneralProgress item='16' step='3rd' text='Order Your Plan' />
         </Box>
       </Container>
     </Box>
   )
 }
 
-export default StartYour
+export default Congrats
+
+
