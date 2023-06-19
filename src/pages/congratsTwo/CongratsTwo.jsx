@@ -7,11 +7,11 @@ import bntIcon from '../../Assent/btn-icon.png';
 import GeneralButton from '../../ui/generalButton/GeneralButton'
 import GeneralProgress from '../../ui/generalPrograss/GeneralProgress'
 
-const Congrats = (props) => {
+const CongratsTwo = (props) => {
   return (
     <Box>
       <Container maxWidth='lg'>
-        <HorizontalLinearStepper item='2' />
+        <HorizontalLinearStepper item='5' />
       <Box maxWidth={'100%'} height={530} sx={{
           background: '#fff',
           borderRadius: '34px',
@@ -35,14 +35,17 @@ const Congrats = (props) => {
           Let Us Work on <span style={{color: '#47B2FF', fontWeight: 'bold'}}>Your Plan</span> Now !
           </Typography>
           <img src={bntIcon} alt="tvar" className='imgBtnIcon' />
-          <GeneralButton login='Order Your Plan Now !' display='none' link='/working' />
-          <GeneralProgress item='16' step='3rd' text='Order Your Plan' />
+          <GeneralButton login='Order Your Creations Now!' display='none' link='/workingTwo' />
+          <GeneralProgress 
+            item='40' 
+            step='6th' 
+            text='Order Your Creations' />
         </Box>
       </Container>
     </Box>
   )
 }
 
-export default Congrats
+export default CongratsTwo
 
 

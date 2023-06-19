@@ -2,12 +2,16 @@ import React from 'react'
 import { Routes, Route } from 'react-router-dom';
 import './App.css';
 import Congrats from './pages/congrats/Congrats';
+import CongratsTwo from './pages/congratsTwo/CongratsTwo';
 import CreatePassword from './pages/createPassword/CreatePassword';
 import ForgetPassword from './pages/forgetPassword/ForgetPassword';
 import Login from './pages/login/Login';
 import ProfileDetails from './pages/ProfileDetails/ProfileDetails';
 import RecoveryLink from './pages/RecoveryLink/RecoveryLink';
 import StartYour from './pages/startYour/StartYour';
+import TablePage from './pages/tablePage/tablePage';
+import Working from './pages/working/Working';
+import WorkingTwo from './pages/workingTwo/WorkingTwo';
 // import { useState } from 'react'
 // import Stepper from './ui/stepper/Stepper.jsx'
 
@@ -47,6 +51,11 @@ function App() {
         <Route path='/startYour'  element={<StartYour  />} />
         <Route path='/profileDetils' element={<ProfileDetails />} />
         <Route path='/congrats' element={<Congrats /> } /> 
+        <Route path='/working' element={<Working /> } />
+        <Route path='/table' element={<TablePage /> } />
+        <Route path='/congratsTwo' element={<CongratsTwo /> } />
+        <Route path='/workingTwo' element={<WorkingTwo /> } />
+        <Route path='/photoPage' element={<PhotoPage /> } />
       </Routes>
     </div>
   );
