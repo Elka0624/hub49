@@ -4,13 +4,13 @@ import GeneralLogo from '../../ui/generalLogo/GeneralLogo'
 import HorizontalLinearStepper from '../../ui/stepper/Stepper'
 import GeneralButton from '../../ui/generalButton/GeneralButton'
 import GeneralProgress from '../../ui/generalPrograss/GeneralProgress'
-import Table from '../../ui/table/Table';
+import PhotoUi from '../../ui/PhotoUi/PhotoUi'
 
 const PhotoPage = () => {
   return (
     <Box>
       <Container>
-        <HorizontalLinearStepper item={'8'}/>
+        <HorizontalLinearStepper item={'7'}/>
         <Box maxWidth={'100%'} height={530} sx={{
           background: '#fff',
           borderRadius: '34px',
@@ -21,12 +21,12 @@ const PhotoPage = () => {
         }}>
           <GeneralLogo />
           <Typography variant='h4' sx={{
-            mt: '30px'
+            mt: '10px'
           }}>
-            Congrats! Our Experts Finalized Your Plan! <br /> Review & Approve For The Next Steps!
+            Congrats! Our Experts Finalized Your Plan!
           </Typography>
-          <Table />
-          <GeneralButton login='Approve Plan!' display='none' link='/congratsTwo' />
+          <PhotoUi />
+          <GeneralButton login='Approve Plan!' display='none' link='/congratsThere' />
           <GeneralProgress 
             text='Approve Plan! '
             item='56' 

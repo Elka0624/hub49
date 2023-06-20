@@ -2,11 +2,14 @@ import React from 'react'
 import { Routes, Route } from 'react-router-dom';
 import './App.css';
 import Congrats from './pages/congrats/Congrats';
+import CongratsThere from './pages/congratsThere/CongratsThere';
 import CongratsTwo from './pages/congratsTwo/CongratsTwo';
 import CreatePassword from './pages/createPassword/CreatePassword';
 import ForgetPassword from './pages/forgetPassword/ForgetPassword';
 import Login from './pages/login/Login';
+import PhotoPage from './pages/photoPage/PhotoPage';
 import ProfileDetails from './pages/ProfileDetails/ProfileDetails';
+import Published from './pages/published/Published';
 import RecoveryLink from './pages/RecoveryLink/RecoveryLink';
 import StartYour from './pages/startYour/StartYour';
 import TablePage from './pages/tablePage/tablePage';
@@ -56,6 +59,8 @@ function App() {
         <Route path='/congratsTwo' element={<CongratsTwo /> } />
         <Route path='/workingTwo' element={<WorkingTwo /> } />
         <Route path='/photoPage' element={<PhotoPage /> } />
+        <Route path='/congratsThere' element={<CongratsThere /> } />
+        <Route path='/published' element={<Published /> } />
       </Routes>
     </div>
   );

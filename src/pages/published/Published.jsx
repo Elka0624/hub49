@@ -1,16 +1,15 @@
-import { Box, Container, Typography } from '@mui/material'
 import React from 'react'
+import { Box, Container, Typography } from '@mui/material'
 import GeneralLogo from '../../ui/generalLogo/GeneralLogo'
 import HorizontalLinearStepper from '../../ui/stepper/Stepper'
 import GeneralButton from '../../ui/generalButton/GeneralButton'
 import GeneralProgress from '../../ui/generalPrograss/GeneralProgress'
-import Table from '../../ui/table/Table';
 
-const TablePage = () => {
+const Published = () => {
   return (
     <Box>
       <Container>
-        <HorizontalLinearStepper item={'4'}/>
+        <HorizontalLinearStepper item={'8'}/>
         <Box maxWidth={'100%'} height={530} sx={{
           background: '#fff',
           borderRadius: '34px',
@@ -21,23 +20,19 @@ const TablePage = () => {
         }}>
           <GeneralLogo />
           <Typography variant='h4' sx={{
-            mt: '30px'
+            mt: '10px'
           }}>
-            <span style={{color: '#47B2FF', fontWeight: 'bold'}}>Congrats!</span> Our Experts Finalized Your Plan! <br />  <span style={{color: '#47B2FF', fontWeight: 'bold'}}>Review</span> & Approve For The <span style={{color: '#47B2FF', fontWeight: 'bold'}}>Next Steps!</span>
+            Congrats! Our Experts Finalized Your Plan!
           </Typography>
-          <Table />
-          <GeneralButton login='Approve Plan!' display='none' link='/congratsTwo' />
+          <GeneralButton login='Approve Plan!' display='none' link='/congratsThere' />
           <GeneralProgress 
-            text='Approve Plan! '
-            item='32' 
-            step='5th'/>
+            text='Setup Posting Time! '
+            item='72' 
+            step='9th'/>
         </Box>
       </Container>
     </Box>
   )
 }
 
-export default TablePage
-
-
-
+export default Published

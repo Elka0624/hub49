@@ -29,7 +29,7 @@ const WorkingTwo = (props) => {
           }}>
             We Will Email You Once They are Ready!
           </Typography>
-          <GeneralButton login='Next' display='none' link={'/table'}/>
+          <GeneralButton login='Next' display='none' link={'/photoPage'}/>
           <GeneralProgress 
             item='48' 
             text='Creations Under Process!' 
