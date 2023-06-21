@@ -4,12 +4,13 @@ import GeneralLogo from '../../ui/generalLogo/GeneralLogo'
 import HorizontalLinearStepper from '../../ui/stepper/Stepper'
 import GeneralButton from '../../ui/generalButton/GeneralButton'
 import GeneralProgress from '../../ui/generalPrograss/GeneralProgress'
+import Week from '../../ui/week/Week'
 
 const Published = () => {
   return (
     <Box>
       <Container>
-        <HorizontalLinearStepper item={'8'}/>
+        <HorizontalLinearStepper item={'9'}/>
         <Box maxWidth={'100%'} height={530} sx={{
           background: '#fff',
           borderRadius: '34px',
@@ -24,7 +25,19 @@ const Published = () => {
           }}>
             Congrats! Our Experts Finalized Your Plan!
           </Typography>
-          <GeneralButton login='Approve Plan!' display='none' link='/congratsThere' />
+          <Box sx={{
+            width: '93%',
+            m: '0 auto',
+            display: 'flex',
+            justifyContent: 'space-between',
+            alignItems: 'center',
+            mt: '10px'
+          }}>
+            <Week />
+            <Week />
+            <Week />
+          </Box>
+          <GeneralButton login='Approve Plan!' display='none' link='/' />
           <GeneralProgress 
             text='Setup Posting Time! '
             item='72' 
